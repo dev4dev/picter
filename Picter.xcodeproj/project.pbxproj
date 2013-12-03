@@ -21,6 +21,8 @@
 		63654DF9184E63D300452F8E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63654DDB184E63D300452F8E /* UIKit.framework */; };
 		63654E01184E63D300452F8E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 63654DFF184E63D300452F8E /* InfoPlist.strings */; };
 		63654E03184E63D300452F8E /* PicterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 63654E02184E63D300452F8E /* PicterTests.m */; };
+		63654E0D184E63E800452F8E /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63654E0C184E63E800452F8E /* Social.framework */; };
+		63654E0F184E63EE00452F8E /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63654E0E184E63EE00452F8E /* Accounts.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		63654DFE184E63D300452F8E /* PicterTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PicterTests-Info.plist"; sourceTree = "<group>"; };
 		63654E00184E63D300452F8E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		63654E02184E63D300452F8E /* PicterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PicterTests.m; sourceTree = "<group>"; };
+		63654E0C184E63E800452F8E /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		63654E0E184E63EE00452F8E /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63654E0F184E63EE00452F8E /* Accounts.framework in Frameworks */,
+				63654E0D184E63E800452F8E /* Social.framework in Frameworks */,
 				63654DDA184E63D300452F8E /* CoreGraphics.framework in Frameworks */,
 				63654DDC184E63D300452F8E /* UIKit.framework in Frameworks */,
 				63654DD8184E63D300452F8E /* Foundation.framework in Frameworks */,
@@ -101,6 +107,8 @@
 		63654DD6184E63D300452F8E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				63654E0E184E63EE00452F8E /* Accounts.framework */,
+				63654E0C184E63E800452F8E /* Social.framework */,
 				63654DD7184E63D300452F8E /* Foundation.framework */,
 				63654DD9184E63D300452F8E /* CoreGraphics.framework */,
 				63654DDB184E63D300452F8E /* UIKit.framework */,
