@@ -23,6 +23,9 @@
 		63654E03184E63D300452F8E /* PicterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 63654E02184E63D300452F8E /* PicterTests.m */; };
 		63654E0D184E63E800452F8E /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63654E0C184E63E800452F8E /* Social.framework */; };
 		63654E0F184E63EE00452F8E /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63654E0E184E63EE00452F8E /* Accounts.framework */; };
+		63654E14184E6B0F00452F8E /* TwitterService.m in Sources */ = {isa = PBXBuildFile; fileRef = 63654E13184E6B0F00452F8E /* TwitterService.m */; };
+		63654E17184E6B7200452F8E /* TwitterPagedResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 63654E16184E6B7200452F8E /* TwitterPagedResult.m */; };
+		63654E1E184E853B00452F8E /* Tweet.m in Sources */ = {isa = PBXBuildFile; fileRef = 63654E1D184E853B00452F8E /* Tweet.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +60,14 @@
 		63654E02184E63D300452F8E /* PicterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PicterTests.m; sourceTree = "<group>"; };
 		63654E0C184E63E800452F8E /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		63654E0E184E63EE00452F8E /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		63654E12184E6B0F00452F8E /* TwitterService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwitterService.h; sourceTree = "<group>"; };
+		63654E13184E6B0F00452F8E /* TwitterService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwitterService.m; sourceTree = "<group>"; };
+		63654E15184E6B7200452F8E /* TwitterPagedResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwitterPagedResult.h; sourceTree = "<group>"; };
+		63654E16184E6B7200452F8E /* TwitterPagedResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwitterPagedResult.m; sourceTree = "<group>"; };
+		63654E1A184E6CEE00452F8E /* Macroses.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Macroses.h; sourceTree = "<group>"; };
+		63654E1B184E6CF600452F8E /* Types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Types.h; sourceTree = "<group>"; };
+		63654E1C184E853B00452F8E /* Tweet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tweet.h; sourceTree = "<group>"; };
+		63654E1D184E853B00452F8E /* Tweet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tweet.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,8 +131,8 @@
 		63654DDD184E63D300452F8E /* Picter */ = {
 			isa = PBXGroup;
 			children = (
-				63654DE6184E63D300452F8E /* AppDelegate.h */,
-				63654DE7184E63D300452F8E /* AppDelegate.m */,
+				63654E19184E6CD700452F8E /* Helpers */,
+				63654E10184E67DF00452F8E /* Library */,
 				63654DE9184E63D300452F8E /* Main.storyboard */,
 				63654DEC184E63D300452F8E /* ViewController.h */,
 				63654DED184E63D300452F8E /* ViewController.m */,
@@ -134,6 +145,8 @@
 		63654DDE184E63D300452F8E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				63654DE6184E63D300452F8E /* AppDelegate.h */,
+				63654DE7184E63D300452F8E /* AppDelegate.m */,
 				63654DDF184E63D300452F8E /* Picter-Info.plist */,
 				63654DE0184E63D300452F8E /* InfoPlist.strings */,
 				63654DE3184E63D300452F8E /* main.m */,
@@ -158,6 +171,36 @@
 				63654DFF184E63D300452F8E /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		63654E10184E67DF00452F8E /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				63654E11184E67F200452F8E /* Twitter */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		63654E11184E67F200452F8E /* Twitter */ = {
+			isa = PBXGroup;
+			children = (
+				63654E12184E6B0F00452F8E /* TwitterService.h */,
+				63654E13184E6B0F00452F8E /* TwitterService.m */,
+				63654E15184E6B7200452F8E /* TwitterPagedResult.h */,
+				63654E16184E6B7200452F8E /* TwitterPagedResult.m */,
+				63654E1C184E853B00452F8E /* Tweet.h */,
+				63654E1D184E853B00452F8E /* Tweet.m */,
+			);
+			path = Twitter;
+			sourceTree = "<group>";
+		};
+		63654E19184E6CD700452F8E /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				63654E1A184E6CEE00452F8E /* Macroses.h */,
+				63654E1B184E6CF600452F8E /* Types.h */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +300,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63654E14184E6B0F00452F8E /* TwitterService.m in Sources */,
 				63654DEE184E63D300452F8E /* ViewController.m in Sources */,
 				63654DE8184E63D300452F8E /* AppDelegate.m in Sources */,
+				63654E1E184E853B00452F8E /* Tweet.m in Sources */,
+				63654E17184E6B7200452F8E /* TwitterPagedResult.m in Sources */,
 				63654DE4184E63D300452F8E /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

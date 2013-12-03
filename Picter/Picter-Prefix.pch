@@ -16,4 +16,7 @@
 
 	#import <Accounts/Accounts.h>
 	#import <Social/Social.h>
+
+	#import "Macroses.h"
+	#import "Types.h"
 #endif
