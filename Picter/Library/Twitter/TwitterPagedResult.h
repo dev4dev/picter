@@ -8,7 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
+@class DataModifier;
+
 typedef NS_ENUM(NSUInteger, TwitterPagedResultOrder) {
+	TwitterPagedResultOrderByAsIs,
 	TwitterPagedResultOrderByDate,
 	TwitterPagedResultOrderByAlpha
 };
@@ -17,8 +20,10 @@ typedef NS_ENUM(NSUInteger, TwitterPagedResultOrder) {
 
 @property (nonatomic, readonly) NSArray *data;
 @property (nonatomic, assign) TwitterPagedResultOrder order;
+@property (nonatomic, strong) DataModifier *dataModifier;
+@property (nonatomic, readonly) BOOL loading;
 
-- (instancetype)initWithURLRequest:(NSURLRequest *)request;
+- (instancetype)initWithRequest:(SLRequest *)request;
 - (void)reset;
 - (void)load:(StatusDataBlock)callback;
 - (void)loadNextPage:(StatusDataBlock)callback;

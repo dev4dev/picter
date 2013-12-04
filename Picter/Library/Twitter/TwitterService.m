@@ -75,7 +75,7 @@ timeLineForAccount:(ACAccount *)account
 													  URL:[NSURL URLWithString:@"https://api.twitter.com/1.1/statuses/home_timeline.json"]
 											   parameters:nil];
 	request.account = account;
-	return [[TwitterPagedResult alloc] initWithURLRequest:[request preparedURLRequest]];
+	return [[TwitterPagedResult alloc] initWithRequest:request];
 }
 
 @end
